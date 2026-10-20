@@ -2,7 +2,7 @@
 Connect-SPOService -Url https://DOMAIN-admin.sharepoint.com
 
 # Import the CSV file
-$users = Import-Csv -Path "C:\QuotaResetOutput.csv"
+$users = Import-Csv -Path "C:\QuotaResetUserList.csv"
 
 # Loop through each user in the CSV
 foreach ($user in $users) {
